@@ -1,0 +1,118 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.subtitle {
+  color: var(--unnamed-color-333333);
+  text-align: left;
+  font: normal normal medium 14px/17px Axiforma;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1; 
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.body2{
+  @extend .subtitle;
+  font-size : 11px;
+  color: #8B8B8B;
+}
+
+.caption {
+    @extend .subtitle;
+    font-size: 12px;
+    color:#646464;
+    font-weight: normal;
+}
+
+.discussion {
+  display:flex;
+  .post {
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 6px #0000000D;
+    border: 1px solid #E2DFDF;
+    border-radius: 6px;
+    opacity: 1;
+    margin-left: 15px;
+    width: 700px;
+  }
+  .posted-by {
+    margin: 21.3px 0px 11.68px 20px;
+    @extend .subtitle
+  }
+  .reply-posted-by {
+    margin:18px 0px 0px 14.5px;
+    @extend .subtitle
+  }
+  .date {
+    margin-left: 28.2px;
+    @extend .body2
+  }
+  .comment{
+    @extend .caption;
+    margin: 0 0 21px 20px;
+  }
+  .comment-reply {
+    @extend .caption;
+    margin: 11.68px 0px 21px 14.5px;
+  }
+  .file {
+    background: #ECF5F5 0% 0% no-repeat padding-box;
+    opacity: 1;
+    height:52px;
+    border-left: 3px solid #047B7C;
+    display:flex;
+    align-items: center;
+    .file-name{
+      @extend .subtitle;
+    color: #333333;
+    margin-left: 14px;
+    }
+    svg {
+      width: 29px;
+      height: 36px;
+      margin: 7.55px 0px 8.08px 19px;
+    }
+  } 
+  .reply{
+    display: flex;
+    align-items: center;
+    border-bottom:  1px solid rgba(112,112,112,0.1);
+    padding-left: 19.5px;
+  }
+  .bottom-row{
+    display: flex;
+    justify-content: space-between;
+    .button {
+      margin:18px 21.5px 18px 21.5px;
+      @extend .subtitle;
+      cursor: pointer;
+    }
+    .reply-button svg{
+      fill: #047B7C;
+    }
+    .collapse {
+      color: #8B8B8B;
+    }
+    .view-all {
+      margin-left:21px;
+      color: #8B8B8B;
+    }
+  }
+ .avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  }
+  .avatar-small{
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    object-fit: cover;
+
+  }
+}
