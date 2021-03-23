@@ -94,12 +94,18 @@
     .reply-button svg{
       fill: #047B7C;
     }
+    .comment-button svg {
+      margin-left: 6.88px
+    }
     .collapse {
       color: #8B8B8B;
     }
     .view-all {
       margin-left:21px;
       color: #8B8B8B;
+    }
+    .down{
+      transform: rotate(180deg);
     }
   }
  .avatar {

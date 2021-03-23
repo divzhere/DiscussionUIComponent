@@ -36,11 +36,11 @@ export function Discussion(props) {
           </div>
         )}
         <div className="bottom-row">
-          <span className="button subtitle">
+          <span className="button subtitle reply-button">
             <RiReplyLine /> Reply
           </span>
           <span
-            className="button collapse"
+            className="button collapse comment-button"
             onClick={() => {
               setShowReply(!showReply);
             }}
@@ -53,7 +53,7 @@ export function Discussion(props) {
                 <span className="view-all">View All</span>
               </span>
             )}
-            <MdKeyboardArrowUp />
+            <MdKeyboardArrowUp className={!showReply && "down"} />
           </span>
         </div>
       </div>
